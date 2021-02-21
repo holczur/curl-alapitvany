@@ -8,6 +8,7 @@
     --purple: #846bc2;
     --dark-purple: #3e335b;
     --red: hsl(0, 94%, 66%);
+    --shadow: rgb(228, 228, 228);
 }
 
 body {
@@ -15,7 +16,6 @@ body {
     margin: 0;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
-    background-color: var(--light);
     line-height: 1.5;
 }
 
@@ -58,16 +58,38 @@ h5 {
 /*BUTTONS*/
 .btn {
     padding: 15px;
-    color: var(--purple);
-    background-color: #fff;
-    border: 1px solid var(--purple);
+    width: 30vw;
+    color: white;
+    background-color: var(--purple);
+    border: 1px solid white;
     border-radius: 50px;
     margin: 1rem;
     position: relative;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    -webkit-box-shadow: 2px 6px 20px -3px rgba(0,0,0,0.54); 
+    box-shadow: 2px 6px 20px -3px rgba(0,0,0,0.54);
 }
+
+.btn::after {
+    content: "";
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    top: 7px;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
+    border-radius: 50px;
+    border: 2px solid white;
+    z-index: 2;
+}
+
+.btn:active {
+    transform: scale(1.05);
+  }
+
 .btn-lg {
     width: 60vw;
 }
@@ -148,7 +170,7 @@ nav {
     padding: 20px;
 }
 
-.nav-item:last-of-type {
+.nav-item.close {
     padding-top: 0;
 }
 
@@ -232,9 +254,12 @@ color: var(--red)}
 
     .welcome {
         background-image: url(./asset/Main_Page_Background_Desktop.jpg);
-        background-position: center;
+        background-position: left;
         background-size: cover;
     }
+
+
+    
     
     
 }
@@ -246,6 +271,23 @@ color: var(--red)}
     
     .desktop-nav {
         display: flex;
+    }
+
+    .welcome .container {
+        top: 33%;
+        left: 50%;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: 1rem;
+    }
+
+    .about-us {
+        width: 6d0vw;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 }
 
