@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #846bc2;
+    --dark-purple: #3e335b;
+}
+
+body {
+    color: var(--dark-purple);
+    margin: 0;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    position: relative;
+}
+
+.hidden-nav {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-purple);
+    position: absolute;
+    top: 0;
+}
+
+.hidden-nav-head {
+    max-height: 200px;
+}
+
+#mobile-nav-logo {
+    transform: scale(0.2);
+}
+
+.fa-times{
+    color: white;
+    font-size: 24px;
+}
+
+.nav-items {
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-item {
+    padding: 20px;
+}
