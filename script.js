@@ -16,5 +16,3 @@ closeMenu.addEventListener('click', () => {
     welcomeText.classList.remove('hide');
 
 })
-
-
