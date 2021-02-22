@@ -24,8 +24,8 @@ ul {
     padding: 0;
 }
 
-section {
-    margin: 0;
+a {
+    font-style: italic;
 }
 
 h1 {
@@ -33,11 +33,16 @@ h1 {
     font-size: 40px;
 }
 
-h2,
-.content {
-    margin: 5rem 10vw;
+h2 {
+    margin: 8rem 0 3rem 0;
+}
+
+h3 {
+    font-family: 'Shippiro Mincho', serif;
+    font-size: 24px;
 
 }
+
 
 h4 {
     margin-bottom: 0;
@@ -50,62 +55,33 @@ h5 {
     margin-top: 0;
 }
 
+.container {
+    width: 80vw;
+    margin:auto;
+}
+
 .content {
-    margin: 2rem 10vw;
+    margin: 2rem 0;
 }
 
-/*BUTTONS*/
-/* .btn {
-    padding: 15px;
-    width: 30vw;
-    color: white;
-    background-color: var(--purple);
-    border: 1px solid white;
-    border-radius: 50px;
-    margin: 1rem;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    -webkit-box-shadow: 2px 6px 20px -3px rgba(0,0,0,0.54); 
-    box-shadow: 2px 6px 20px -3px rgba(0,0,0,0.54);
-}
-
-.btn::after {
-    content: "";
-    display: block;
-    background-color: transparent;
-    position: absolute;
-    top: 7px;
-    bottom: 7px;
-    left: 7px;
-    right: 7px;
-    border-radius: 50px;
-    border: 2px solid white;
-    z-index: 2;
-}
-
-.btn:active {
-    transform: scale(1.05);
-  } */
-
+/*BUTTONS****************************************************************/
 .btn {
   text-decoration: none;
   display: block;
   min-width: 100px;
-  width: fit-content;
+  max-width: 300px;
   padding: 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
   letter-spacing: 2px;
-  background-color: rgb(86,60,152);
+  background-color: hsl(231, 69%, 60%);
   color: white;
-  border-radius: 10px;
+  border-radius: 50px 0 50px 0;
   -webkit-box-shadow: 3px 5px 6px 1px rgba(62,51,91,0.8); 
   box-shadow: 3px 5px 6px 1px rgba(62,51,91,0.8);
   position: relative;
-  font-family: 'Roboto', snas-serif
-
 }
 
 .btn:active {
@@ -122,8 +98,8 @@ h5 {
     bottom: 1px;
     left: 1px;
     right: 1px;
-    border-radius: 10px;
-    border: 3px solid #846bc2;
+    border-radius: 50px 0 50px 0;
+    border: 1px solid white;
     z-index: 2;
 }
 
@@ -157,11 +133,12 @@ nav {
 
 .open {
     margin: 1rem;
-    height: 35px;
+    height: 30px;
     width: auto;
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     left: 20px;
+    cursor: pointer;
 }
 
 
@@ -200,11 +177,13 @@ nav {
     list-style-type: none;
     text-align: center;
     position: relative;
-    margin-right: 1rem
+    margin-right: 1rem;
 }
 
 .nav-item {
     padding: 20px;
+    cursor: pointer;
+
 }
 
 .nav-item.close {
@@ -255,9 +234,17 @@ color: var(--red)}
 }
 
 
-.about-us {
+.about-us, 
+.our-news {
     min-height: 100vh;
+    width: 95vw;
+    margin: auto;
+}
 
+.about-us .side-pic {
+    display: none;
+    height: 100vh;
+    width: auto
 }
 
 .about-us .btn-container {
@@ -267,9 +254,76 @@ color: var(--red)}
     margin: 2rem auto;
 }
 
+.about-us .btn {
+    margin-top: 1rem;
+}
 
 
+.subtitle {
+    width: 70vw;
+    margin-bottom: 0;
+}
 
+.date {
+    margin-top: 0;
+}
+
+.media {
+    display: block;
+    max-width: 70vw;
+    margin: auto;
+}
+
+.our-news .wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-angle-left, 
+.fa-angle-right {
+    font-size: 40px;
+}
+
+.fa-angle-left {
+    margin-right: 1rem;
+}
+
+.fa-angle-right {
+    margin-left: 1rem;
+}
+
+.supporters {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.pos-marks {
+    display: flex;
+    justify-content: center;
+
+}
+
+.pos-mark.actual {
+    background-color: var(--dark-purple);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.pos-mark {
+    height: 15px;
+    width: 15px;
+    border: 3px solid var(--dark-purple);
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 1rem 1rem 3rem 1rem;
+}
 
 
 
@@ -295,13 +349,19 @@ color: var(--red)}
         background-size: cover;
     }
 
+    .welcome .container {
+        top: 33%;
+        left: 50%;
+    }
+
+
 
     
     
     
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
     .mobile-nav-head {
         display: none;
     }
@@ -321,11 +381,44 @@ color: var(--red)}
     }
 
     .about-us {
-        width: 6d0vw;
-        margin-left: auto;
-        margin-right: auto;
-
+        margin-left: 0;
     }
+
+    .about-us .container {
+        width: 100vw;
+        margin: 0;
+        display: flex;     
+    }
+
+    .about-us .wrap {
+        width: 40vw;
+        margin: auto;
+    }
+
+    .about-us .btn-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about-us .btn {
+        margin: 2rem 1rem;
+    }
+
+    .about-us .side-pic {
+        display: block;
+    }
+
+    .news-content {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+    }
+
+    .media {
+        width: 40vw;
+    }
+
+
 }
 
 
