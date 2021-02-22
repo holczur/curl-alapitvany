@@ -26,7 +26,6 @@ ul {
 
 section {
     margin: 0;
-    text-align: justify;
 }
 
 h1 {
@@ -56,7 +55,7 @@ h5 {
 }
 
 /*BUTTONS*/
-.btn {
+/* .btn {
     padding: 15px;
     width: 30vw;
     color: white;
@@ -88,7 +87,45 @@ h5 {
 
 .btn:active {
     transform: scale(1.05);
-  }
+  } */
+
+.btn {
+  text-decoration: none;
+  display: block;
+  min-width: 100px;
+  width: fit-content;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+  background-color: rgb(86,60,152);
+  color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 5px 6px 1px rgba(62,51,91,0.8); 
+  box-shadow: 3px 5px 6px 1px rgba(62,51,91,0.8);
+  position: relative;
+  font-family: 'Roboto', snas-serif
+
+}
+
+.btn:active {
+  transform: scale(.97);
+  box-shadow: none;
+}
+
+.btn::after {
+    content: "";
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    border-radius: 10px;
+    border: 3px solid #846bc2;
+    z-index: 2;
+}
 
 .btn-lg {
     width: 60vw;
