@@ -16,3 +16,8 @@ closeMenu.addEventListener('click', () => {
     welcomeText.classList.remove('hide');
 
 })
+
+/*MEDIA GALERY **********************************************/
+
+const next = document.querySelectorAll('.next')
+const previous = document.querySelectorAll('.prev')
