@@ -76,7 +76,7 @@ h5 {
   font-weight: 400;
   font-style: italic;
   letter-spacing: 2px;
-  background-color: hsl(231, 69%, 60%);
+  background-color: var(--purple);
   color: white;
   border-radius: 50px 0 50px 0;
   -webkit-box-shadow: 3px 5px 6px 1px rgba(62,51,91,0.8); 
@@ -247,15 +247,17 @@ color: var(--red)}
     width: auto
 }
 
-.about-us .btn-container {
+.btn-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2rem auto;
 }
 
-.about-us .btn {
-    margin-top: 1rem;
+.about-us .btn, 
+.faqs .btn, 
+.our-news .btn {
+    margin: 1rem auto;
 }
 
 
@@ -284,7 +286,7 @@ color: var(--red)}
 }
 
 .slide {
-    display: none;
+    display: block;
     margin: auto;
     width: 70vw;
 }
@@ -309,8 +311,12 @@ color: var(--red)}
   
   /* Position the "next button" to the right */
   .next {
-    right: 0;
+    right: -20px;
     border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+      left: -20px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -339,18 +345,150 @@ color: var(--red)}
   }
   
 
+.slide {
+    margin: auto;
+    width:fit-content
+}
+
+.faqs {
+    width: 80vw;
+    margin: auto;
+}
+
+.faq {
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    width: 80vw;
+    max-width: 80vw;
+}
+
+.faq-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.faq:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.faq.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.faq.active::before {
+    content: '\f086';
+    font-family: 'Font Awesome 5 Free';
+    color: var(--purple);
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.1;
+    bottom: 0px;
+    right: 10px;
+    z-index: 0;
+}
+
+.faq-toggle {
+    margin-right: 10px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.faq-toggle:focus {
+    outline: 0;
+}
 
 
 
+.faq-toggle i {
+    background-color: var(--purple);
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+
+h4.question {
+    margin-top:0;
+}
+
+.question {
+    font-weight: 500;
+}
+
+.answer {
+text-align: justify;
+display: none;
+margin-top: 1rem;
+}
+
+.faq.active .answer {
+    display: block;
+}
 
 
 
+.question i {
+    margin-right: 15px;
+    border: 2px solid var(--text-dark);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 3px;
+    color: var(--text-dark);
+}
+
+.contact {
+    width: 80vw;
+    margin: auto;
+}
+
+.contact .container form .input {
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: solid 1px var(--dark-purple);
+}
+
+.contact .container form .name {
+    width: 120px;
+    height: 30px
+}
+
+.form-element {
+    margin-top: 1rem;
+}
 
 
+.contact-textarea {
+    width: 80vw;
+    border-radius: 10px;
+    border: solid 1px var(--dark-purple);
 
-
-
-
+}
 
 
 /* MEDIAQUERRIES *****************************************************/
@@ -421,12 +559,14 @@ color: var(--red)}
         margin: auto;
     }
 
-    .about-us .btn-container {
+    .btn-container {
         flex-direction: row;
         justify-content: center;
     }
 
-    .about-us .btn {
+    .about-us, 
+    .our-news .btn, 
+    .faqs .btn {
         margin: 2rem 1rem;
     }
 
@@ -435,25 +575,21 @@ color: var(--red)}
     }
 
 
-    .news-media {
-        margin-left: 8rem;
-    }
 
     .media {
-        width: 30vw
+        width: 30vw;
     }
-
-    .news-head {
-        width: 25vw;
-    }
-
+    
     .news {
+        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        margin-top: 5rem;
     }
-
-
+    
+    .news-text {
+        width: 40vw;
+    }
 
 }
 
