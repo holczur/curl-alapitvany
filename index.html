@@ -442,63 +442,70 @@
 
         </section>
         <section class="contact">
-            <h2 class="title">Lépj velünk kapcsolatba!</h2>
-            <p class="content text-justify">
-                Ha felmerült kérdéseidre nem találtál választ, akkor kérdésedet juttasd el hozzánk a kitöltött űrlap
-                segítségével, vagy keress minket bátran megadott elérhetőségeink valamelyikén!
-            </p>
             <div class="container">
-                <form action="#">
-                    <div class="form-wrap">
-                        <div class="container">
-                            <div class="form-name form-element mb-m">
-                                <i class="fas fa-user"></i>
-                                <label for="last-name">Név:</label>
-                                <input type="text" id="last-name" name="last-name" placeholder="Vezetéknév"
-                                    class="name input" required>
-                                <input type="text" id="first-name" name="first-name" placeholder="Keresztnév"
-                                    class="name input" required>
+                <h2 class="title">Lépj velünk kapcsolatba!</h2>
+                <p class="content">
+                    Ha felmerült kérdéseidre nem találtál választ, akkor kérdésedet juttasd el hozzánk a kitöltött űrlap
+                    segítségével, vagy keress minket bátran megadott elérhetőségeink valamelyikén!
+                </p>
+                <div class="card">
+                    <form action="#">
+                        <div class="form-wrap">
+                            <div class="container">
+                                <div class="form-name form-element mb-m">
+                                    <label for="last-name"><i class="fas fa-user"></i></label>
+                                    <input type="text" id="last-name" name="last-name" placeholder="Vezetéknév"
+                                        class="name input" required>
+                                    <input type="text" id="first-name" name="first-name" placeholder="Keresztnév"
+                                        class="name input" required>
+                                </div>
+                                <div class="form-phone form-element mb-m">
+                                    <label for="phone"><i class="fas fa-phone-alt"></i></label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Telefonszám" class="phone input">
+                                </div>
+                                <div class="form-email form-element mb-m">
+                                    <label for="email"><i class="fas fa-envelope"></i></label>
+                                    <input type="email" id="email" name="email" placeholder="e-mail cím" class="email input"
+                                        required>
+                                </div>
                             </div>
-                            <div class="form-phone form-element mb-m">
-                                <i class="fas fa-phone-alt"></i>
-                                <label for="phone">Telefonszám:</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Telefonszám" class="phone input">
-                            </div>
-                            <div class="form-email form-element mb-m">
-                                <i class="fas fa-envelope"></i>
-                                <label for="email">E-mail cím:</label>
-                                <input type="email" id="email" name="email" placeholder="e-mail cím" class="email input"
-                                    required>
+                            <div class="form-message form-element">
+                                <i class="fas fa-pencil-alt"></i>
+                                <label for="message">Üzenet:</label><br>
+                                <textarea name="message" id="message" class="contact-textarea"></textarea>
                             </div>
                         </div>
-                        <div class="form-message form-element">
-                            <i class="fas fa-pencil-alt"></i>
-                            <label for="message">Üzenet:</label><br>
-                            <textarea name="message" id="message" class="contact-textarea"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-lg">Küldés</button>
-                </form>
+                        <div class="btn-container"><button type="submit" class="btn btn-lg">Küldés</button></div>
+                    </form>
+                </div>
             </div>
-        </section>
-
-        <footer>
-            <div class="footer-content">
-                <p>Curly Hajadományozó Alapítvány</p>
+            <div class="contact-details">
+                <h1 class="contact-title">Curly<br>Hajadományozó Alapítvány</h1>
                 <p>1152 Budapest, Galgó utca 4. <br>
                     Adószám: 18909519-1-42 <br>
                     Nyilvántartási szám: 01-01-0012491 <br>
                     Bankszámla szám: 16200209-17070562
                 </p>
                 <p>
-                    Tájékoztatás, hajkezelő <br>
+                   <strong>Tájékoztatás, hajkezelő</strong><br>
                     Nadabán Csaba: 06-30/966-4850
                 </p>
-
-                <p>Kuratóriumi elnök <br>
+    
+                <p><strong>Kuratóriumi elnök</strong><br>
                     Fodor Bettina: 06-30/501-1428
                 </p>
             </div>
+
+
+
+
+
+
+
+
+        </section>
+
+        <footer>
             <div class="links">
                 <a href="#">Adatkezelési tájékoztató</a>
                 <a href="#">Pályázati feltételek</a>
