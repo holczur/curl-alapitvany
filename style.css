@@ -579,7 +579,11 @@ footer {
     padding: 20px;
 }
 
-.mobile-footer p{
+.copyright {
+    text-align: center;
+}
+
+.copyright p{
     margin: 0;
     font-size: 10px;
     color: white;
@@ -592,12 +596,12 @@ footer {
     justify-content: space-between;
 }
 
-.mobile-footer a {
+.copyright a {
     font-size: 15px;
     color: white;
 }
 
-.desktop-links {
+.desktop-footer {
     display: none;
 }
 
@@ -808,14 +812,31 @@ footer {
 }
 
 
+footer .mobile-footer {
+    display: none;
+}
 
+.desktop-links {
+    display: flex;
+}
+ 
+.desktop-links a {
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+    font-style: normal;
+    padding: 10px;
+}
 
+    .desktop-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-
-
-    
-
-
+    .desktop-footer a:hover {
+        color: var(--red);
+    }
 
     
 
@@ -824,7 +845,10 @@ footer {
 
 
 
-
+::selection {
+    background-color: var(--purple);
+    color:white;
+}
 
 .invisible {
     opacity: 0;
