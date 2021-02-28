@@ -696,6 +696,7 @@ footer {
 
     .about-us {
         width: 100vw;
+        padding-bottom: 0;
     }
 
     .about-us .container {
@@ -776,10 +777,12 @@ footer {
     width: 40vw;
     margin: auto;
     order: 2;
-    margin: 0 5rem;
+    margin: 1rem auto;
 }
 
-
+.contact .card {
+    margin-bottom: 20px;
+}
 
 .contact .title,
 .contact .content {
@@ -809,6 +812,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 30vw;
 }
 
 
