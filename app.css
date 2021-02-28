@@ -1,0 +1,62 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 5px 10px 8px 2px var(--shadow);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.app {
+    display: flex;
+    align-content: start;
+    justify-content: center;
+    overflow-y: scroll
+}
+  
+.hs {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+  
+.hide-scroll {
+    overflow-y: hidden;
+}
+  
+.card-row {
+    margin-right: 30px;
+    width: 600px
+}
+
+.card-row img {
+      height: 150px;
+      width: auto;
+}
+
+
+.manual-step, 
+.hd-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.manual-text {
+    line-height: 1.2;
+}
+
+.card-row p{
+    width: 200px;
+}
+
+img.profile-pic {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}

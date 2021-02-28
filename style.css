@@ -517,7 +517,8 @@ margin-top: 1rem;
     margin: auto;
 }
 
-.contact .card {
+.contact .card,
+.request .card {
     box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
     border-top: 10px solid var(--purple);
     border-radius: 0 0 10px 10px;
@@ -553,6 +554,8 @@ margin-top: 1rem;
 .input.email {
     width: 70vw;
 }
+
+
 
 .form-message textarea {
     width: 70vw;

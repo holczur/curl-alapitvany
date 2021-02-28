@@ -21,12 +21,7 @@ closeMenu.addEventListener('click', () => {
     navLogo.classList.remove('hide');
 })
 
-/*MEDIA GALERY **********************************************/
-
-const newsMedia = document.querySelectorAll('.news-media')
-const prev = document.querySelectorAll('.prev')
-const next = document.querySelectorAll('.next')
-const media = document.querySelectorAll('.media')
+/*FAQ **********************************************/
 
 const faqs = document.querySelectorAll('.faq')
 
@@ -35,3 +30,4 @@ faqs.forEach(faq => {
         faq.classList.toggle('active')
     })
 });
+
