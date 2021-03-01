@@ -37,8 +37,10 @@ h1 {
 }
 
 h2 {
-    margin: 8rem 0 3rem 0;
+    margin: 0 0 3rem 0;
+    padding-top: 8rem;
 }
+
 
 h3 {
     font-family: 'Shippiro Mincho', serif;
@@ -167,6 +169,7 @@ nav {
 .fa-times{
     color: white;
     font-size: 24px;
+    cursor: pointer;
 }
 
 
@@ -178,17 +181,25 @@ nav {
     margin-right: 1rem;
 }
 
-.nav-item {
+a.nav-item {
     padding: 20px;
+    display: block;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--dark-purple);
+    font-style: normal;
+}
 
+.hidden-nav a.nav-item {
+    color: white;
 }
 
 .nav-item.close {
-    padding-top: 0;
+    padding-top: 20px
 }
 
-.nav-item:hover {
+a.nav-item:hover,
+.nav-item.close:hover {
 color: var(--red)}
 
 
