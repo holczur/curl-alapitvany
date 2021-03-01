@@ -21,6 +21,13 @@ closeMenu.addEventListener('click', () => {
     navLogo.classList.remove('hide');
 })
 
+hiddenNav.addEventListener('click', () => {
+    hiddenNav.classList.add('invisible');
+    mobileNav.classList.remove('invisible');
+    welcomeText.classList.remove('hide');
+    navLogo.classList.remove('hide');
+})
+
 /*FAQ **********************************************/
 
 const faqs = document.querySelectorAll('.faq')
