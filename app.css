@@ -1,19 +1,8 @@
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 2em;
-    box-shadow: 5px 10px 8px 2px var(--shadow);
-    cursor: pointer;
-    border-radius: 20px;
-}
-
 .app {
     display: flex;
     align-content: start;
     justify-content: center;
-    overflow-y: scroll
+    overflow-y: scroll;
 }
   
 .hs {
@@ -27,6 +16,7 @@
 .hide-scroll {
     overflow-y: hidden;
 }
+
   
 .card-row {
     margin-right: 30px;
@@ -59,4 +49,7 @@ img.profile-pic {
     width: 150px;
     height: 150px;
     margin: auto;
+}
+
+@media screen and (min-width: 640px) {
 }

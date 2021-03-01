@@ -626,6 +626,70 @@ footer {
 
 }
 
+.vw80 {
+    width: 80vw;
+    margin: auto;
+}
+
+.donation h3 {
+    padding-top: 2rem;;
+}
+
+.thank-you,
+.decide {
+    font-family: 'Shippiro Mincho', serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card.bank{
+    background-image: url(./asset/bank.svg);
+}
+
+.card.tax {
+    background-image: url(./asset/ado1.svg);
+    
+}
+
+.card.bank,
+.card.tax {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.donation .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.donation .img-container img {
+    height: 100px;
+}
+
+.donation h4 {
+    margin-top: 4rem;;
+}
+
+
+
+
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 5px 10px 8px 2px var(--shadow);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+
 
 
 
@@ -654,13 +718,6 @@ footer {
         left: 300px;
         margin: auto;
     }
-    
-
-
-
-
-
-
 
     .nav-items {
         display: flex;
@@ -673,6 +730,17 @@ footer {
 
     .desktop-nav {
         display: none;
+    }
+
+    .methodes {
+        width: 60vw;
+        margin: auto;
+    }
+
+    .hair-donation-img {
+        width: 50vw;
+        margin: auto;
+        display: block;
     }
 
 
@@ -856,7 +924,53 @@ footer .mobile-footer {
         color: var(--red);
     }
 
-    
+    .methodes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .methodes .card {
+        width: 500px;
+        height: 400px
+    }
+
+    .money {
+        margin-right: 10vw;
+    }
+
+    .hair-donation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10rem auto 5rem auto;
+        width: 60vw;
+    }
+
+
+    .hair-donation-img {
+        width: 500px;
+    }
+
+    .hair-donation-text {
+        width: 20vw;
+    }
+
+
+    .length-30 {
+        text-align: center;
+        width: 30vw;
+        margin: auto;
+    }
+
+    .length-40 {
+        width: 35vw;
+        margin-left: 10vw;
+
+    }
+
+
 
 }
 
