@@ -631,50 +631,35 @@ footer {
     margin: auto;
 }
 
-.donation h3 {
-    padding-top: 2rem;;
+.money-donation {
+    margin-bottom: 8rem;
 }
 
-.thank-you,
-.decide {
-    font-family: 'Shippiro Mincho', serif;
-    font-size: 24px;
-    text-align: center;
+.hair-donation-option {
+    margin-bottom: 5rem;
 }
 
-.card.bank{
-    background-image: url(./asset/bank.svg);
-}
-
-.card.tax {
-    background-image: url(./asset/ado1.svg);
-    
-}
-
-.card.bank,
-.card.tax {
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.donation .img-container {
+.hair-donation .img-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 50vw;
+    margin: auto;
 }
 
-.donation .img-container img {
-    height: 100px;
+.hair-donation .img-container img {
+    padding: 20px;
+    width: 60%;
+    max-width: 200px;
+    height: auto;
 }
 
-.donation h4 {
-    margin-top: 4rem;;
+.decide {
+    text-align: center;
+    font-family: 'Shippiro Mincho', serif;
+    font-size: 25px;
+    margin-bottom: 5rem;
 }
-
-
-
-
-
 
 
 .card{
@@ -732,15 +717,19 @@ footer {
         display: none;
     }
 
-    .methodes {
-        width: 60vw;
-        margin: auto;
+    .donation-manual {
+        height: 300px;
+        width: auto;
     }
 
-    .hair-donation-img {
-        width: 50vw;
-        margin: auto;
-        display: block;
+    .measure.container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .measure-text {
+        width: 30vw;
     }
 
 
@@ -924,51 +913,47 @@ footer .mobile-footer {
         color: var(--red);
     }
 
-    .methodes {
+    .money-donation {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
+        margin-top: 10rem;
+    }
+
+    .money-donation h2 {
+        padding: 0;
+    }
+
+    .money-donation .container {
+        flex-basis: 40%;
+    }
+
+    .hair-donation .img-container {
+        width: 50vw;
+    }
+
+    .option-text {
+        width: 55vw;
         margin: auto;
     }
 
-    .methodes .card {
-        width: 500px;
-        height: 400px
-    }
-
-    .money {
-        margin-right: 10vw;
-    }
-
-    .hair-donation {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10rem auto 5rem auto;
-        width: 60vw;
-    }
-
-
-    .hair-donation-img {
-        width: 500px;
-    }
-
-    .hair-donation-text {
-        width: 20vw;
-    }
-
-
-    .length-30 {
-        text-align: center;
-        width: 30vw;
-        margin: auto;
+    .measure.container {
+        width: 50vw;
+        margin-bottom: 5rem;
+        margin-left: 9vw;;
+        justify-content: space-between;
     }
 
     .length-40 {
-        width: 35vw;
-        margin-left: 10vw;
-
+        width: 500px;
+        text-align: center;
+        margin: 0 auto 5rem auto;
     }
+
+
+
+
+
 
 
 

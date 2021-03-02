@@ -1,55 +1,77 @@
-.app {
-    display: flex;
-    align-content: start;
-    justify-content: center;
-    overflow-y: scroll;
-}
-  
-.hs {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    padding-bottom: 20px;
-    margin-left: 20px;
-}
-  
-.hide-scroll {
-    overflow-y: hidden;
-}
-
-  
-.card-row {
-    margin-right: 30px;
-    width: 600px
-}
-
-.card-row img {
+    .slide-container {
+      position: relative;
+    }
+    
+    .main {
+      padding: 0;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    
+    .items {
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      transition: all 0.2s;
+      transform: scale(0.98);
+      will-change: transform;
+      user-select: none;
+      cursor: pointer;
+      display: flex;
+    }
+       
+    
+    .items.active {
+      background: rgba(255,255,255,0.3);
+      cursor: grabbing;
+      cursor: -webkit-grabbing;
+      transform: scale(1);
+    }
+    
+    .item {
+      min-width: 400px;
+      white-space: normal;
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .card-img {
       height: 150px;
-      width: auto;
-}
+      margin: auto;
+    }
 
+    .profile-pic {
+      width: 200px;
+      margin: auto;
+    }
 
-.manual-step, 
-.hd-name {
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 5px;
-}
+    .hd-name {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
 
-.manual-text {
-    line-height: 1.2;
-}
+    .swipe .fas {
+      animation: rotate 2.5s infinite;
+      font-size: 50px;
+      transform: rotate(30deg);
+      opacity: .2;
+      position: absolute;
+      right: 30px;
+      bottom: 0;
+    }
 
-.card-row p{
-    width: 200px;
-}
+    @keyframes rotate {
+      50% {transform: rotate(-30deg)}
+    }
 
-img.profile-pic {
-    width: 150px;
-    height: 150px;
-    margin: auto;
-}
+      @media screen and (max-width: 500px) {
+        .item {
+      min-height: 200px;
+      min-width: 300px;
+      }
+    }  
 
-@media screen and (min-width: 640px) {
-}
+  ::-webkit-scrollbar {
+      width: 0;  
+  }
