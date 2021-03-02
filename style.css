@@ -22,6 +22,11 @@ body {
     line-height: 1.5;
 }
 
+input[type="date"] {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -661,6 +666,78 @@ footer {
     margin-bottom: 5rem;
 }
 
+.request {
+    width: 90vw;
+    margin: 0 auto 4rem auto;
+    position: relative;
+}
+
+.request-title {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+
+.request ul {
+    padding-left: 20px;
+}
+
+.checkboxes {
+    margin-top: 2rem;
+    font-size: 15px;
+}
+
+.request form {
+    text-align: left;
+}
+
+.file-input-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: green;
+    font-size: 20px;
+}
+
+
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Orvosi igazolás';
+    display: inline-block;
+    border: 1px solid var(--purple);
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+    width: 200px;
+    text-align: center;
+    color: var(--dark-purple);
+  }
+
+  .cfi2::before {
+      content :'Beleegyező nyilatkozat'
+  }
+
+
+
+
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+
+  .request .btn {
+      margin-bottom: 1rem;
+  }
+
+
+
 
 .card{
     display: flex;
@@ -672,7 +749,6 @@ footer {
     cursor: pointer;
     border-radius: 20px;
 }
-
 
 
 
@@ -952,7 +1028,67 @@ footer .mobile-footer {
 
 
 
+.request .card {
+    width: 50vw;
+    margin: 5rem auto;
+    padding: 5%;
+    position: relative;
+}
 
+.request .btn {
+    margin: 1rem;
+}
+
+.q-container {
+    display: flex;
+    justify-content: space-between;
+}
+.u-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.request .flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.req-text {
+    flex-basis: 40%;
+    margin-left: 4rem;
+    position: relative;
+}
+
+.req-form .card{
+    margin-top: 2rem;
+}
+
+
+.please {
+    width: 40vw;
+    margin: 1rem auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+.request .img-container {
+    width: 130%;
+    height: 50%;
+    background-color: aqua;
+    position: absolute;
+    bottom: 75px;
+    right: -30%;
+    background-image: url(./asset/pexels-kseniya-mazaeva-4919405.jpg);
+    background-size: cover;
+    background-position: right top;
+    border-radius: 20px;
+    opacity: .5;
+}
+
+.request h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
 
 
 
